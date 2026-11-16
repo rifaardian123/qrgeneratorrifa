@@ -1,0 +1,168 @@
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* CONTAINER */
+.container {
+    width: 100%;
+    max-width: 520px;
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 18px;
+    border: 1px solid #334155;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+/* TITLE */
+h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+  /* ACTION BUTTONS */
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+#generateBtn {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+#resetBtn {
+    background: #dc2626;
+    padding: 12px 22px;
+}
+
+#resetBtn:hover {
+    background: #b91c1c;
+}
+
+button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}  color: #38bdf8;
+}
+
+.container > p {
+    color: #94a3b8;
+    margin-bottom: 25px;
+}
+
+/* TEXTAREA */
+textarea {
+    width: 100%;
+    height: 140px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #475569;
+    background: #0f172a;
+    color: white;
+    font-size: 15px;
+    resize: vertical;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+textarea:focus {
+    border-color: #38bdf8;
+}
+
+/* BUTTON */
+button {
+    border: none;
+    padding: 12px 20px;
+    border-radius: 9px;
+    background: #0284c7;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #0369a1;
+}
+
+#generateBtn {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+/* QR VIEWER */
+#qrViewer {
+    background: #0f172a;
+    padding: 22px;
+    border-radius: 14px;
+    border: 1px solid #334155;
+}
+
+#qrTitle {
+    font-size: 21px;
+    margin-bottom: 18px;
+}
+
+/* QR CODE */
+#qrcode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 220px;
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+#qrcode img,
+#qrcode canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+/* NAVIGATION */
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#counter {
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    .navigation button {
+        padding: 10px 12px;
+        font-size: 12px;
+    }
+}
